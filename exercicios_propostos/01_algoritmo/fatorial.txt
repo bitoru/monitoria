@@ -1,0 +1,21 @@
+// Elabore um algoritmo que leia um valor e calcule seu fatorial
+// 0! = 1
+// a! para a<0 não existe
+// a! para a>0 = 1 * 2 * 3 * ... * (a-2) * (a-1) * a
+
+inicio
+
+    fatorial <- 1
+    
+    ler x
+
+    se x = 0 então
+        imprime 1
+    senão se x < 0 então
+        imprime "não existe"
+    senão
+        para i <- 1,x faça
+            fatorial <- fatorial * i
+        imprime fatorial
+
+fim
